@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hira's Grievance Portal</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #fdf5ff;
+  border: 4px dashed #d98fd9;
+  border-radius: 30px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 15px #e6ccff;
+}
+
+.heart {
+  position: absolute;
+  font-size: 2rem;
+  color: #b300b3;
+}
+
+.heart.left {
+  top: -20px;
+  left: -20px;
+  transform: rotate(-20deg);
+}
+
+.heart.right {
+  top: -20px;
+  right: -20px;
+  transform: rotate(20deg);
+}
+
+h1 {
+  text-align: center;
+  color: #a200a2;
+  margin-bottom: 10px;
+}
+
+p.signature {
+  text-align: center;
+  font-style: italic;
+  color: #5e005e;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #5e005e;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #dda0dd;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 1em;
+  background: #fff6ff;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #b300b3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #990099;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.framed-pic {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 5px solid #b300b3;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #b300b3;
+  width: 150px;
+}
+
+.dancing-pixels {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  animation: dance 6s infinite ease-in-out;
+}
+
+@keyframes dance {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://example.com/be_my_mistake.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>  <div class="container">
+    <div class="heart left">💜</div>
+    <div class="heart right">💜</div><h1>Hira's Grievance Portal</h1>
+<p class="signature">by Hassan 💌</p>
+
+<form id="grievanceForm">
+  <label for="name">hi misses:</label>
+  <input type="text" id="name" name="name" placeholder="how are you">
+
+  <label for="complaint">What's your complaint today?</label>
+  <textarea id="complaint" name="complaint" rows="5" placeholder="Type it all out, Hira 👀..."></textarea>
+
+  <label for="rating">How much do you like Hassan today? (1–10)</label>
+  <select id="rating" name="rating">
+    <option value="">Choose</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+
+  <button type="submit">Send 💌</button>
+</form>
+
+<div class="footer">
+  💕 Your opinion matters, Hira! 💕
+</div>
+
+  </div>  <img src="file-RMQNx9aGUJkiGA3NpBqiCH" class="framed-pic" alt="my pretty woman">
+  <img src="https://i.imgur.com/ifCmvDc.gif" class="dancing-pixels" width="80" alt="Pixel dancers">  <script>
+    document.getElementById("grievanceForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Complaint submitted successfully! 💜 Hassan loves your honesty!");
+      this.reset();
+    });
+  </script></body>
+</html>
